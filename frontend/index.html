@@ -1,0 +1,28 @@
+<!doctype html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>UniSENAI | Aula 13 - Docker Compose</title>
+    <link rel="stylesheet" href="/styles.css">
+    <script src="/app.js" defer></script>
+  </head>
+  <body>
+    <main class="app">
+      <header><span class="kicker">COMPUTAÇÃO EM NUVEM · AULA 13</span>
+        <h1>Quadro de tarefas</h1>
+        <p>Frontend Nginx → API Flask → PostgreSQL · Docker Compose</p>
+      </header>
+      <form id="task-form">
+        <label for="task-title">Nova tarefa</label>
+        <div class="input-row">
+          <input id="task-title" maxlength="120" required placeholder="Ex.: Validar persistência do banco">
+          <button type="submit">Adicionar</button>
+        </div>
+      </form>
+      <div class="status" role="status" id="status">Carregando tarefas…</div>
+      <section aria-label="Tarefas salvas"><h2>Tarefas cadastradas</h2><ul id="tasks"></ul></section>
+      <footer>Laboratório didático local — dados armazenados no volume pgdata</footer>
+    </main>
+  </body>
+</html>

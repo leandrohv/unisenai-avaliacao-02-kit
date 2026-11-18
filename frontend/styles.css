@@ -1,0 +1,20 @@
+:root { font-family: system-ui, -apple-system, Segoe UI, sans-serif; color: #14233d; background: #eef5fa; }
+* { box-sizing: border-box; }
+body { margin: 0; padding: 44px 18px; }
+.app { width: min(760px, 100%); margin: 0 auto; background: white; padding: 32px; border-radius: 16px; box-shadow: 0 16px 42px #0c30551f; }
+.kicker { color: #0873b6; font-size: .74rem; font-weight: 800; letter-spacing: .11em; }
+h1 { font-size: 2.2rem; margin: .5rem 0; }
+header p, footer { color: #597084; }
+form { border: 1px solid #d5e4ef; border-radius: 12px; padding: 20px; margin: 28px 0 16px; }
+label { font-weight: 700; display: block; margin-bottom: 10px; }
+.input-row { display: flex; gap: 10px; }
+input { flex: 1; min-width: 0; border: 1px solid #9bb5c8; border-radius: 7px; padding: 12px; font: inherit; }
+button { background: #0069a7; color: white; border: 0; border-radius: 7px; padding: 11px 18px; font: inherit; cursor: pointer; font-weight: 700; }
+button:hover { background: #004f83; }
+.status { min-height: 1.6em; color: #296784; margin-bottom: 18px; }
+.status.error { color: #a42929; }
+h2 { font-size: 1.08rem; }
+li { background: #f5f9fc; border-bottom: 1px solid #ddeaf3; list-style: none; padding: 14px; }
+ul { padding: 0; }
+footer { margin-top: 20px; font-size: .8rem; }
+@media(max-width: 520px){ .app { padding: 20px;} .input-row{flex-direction:column;} h1{font-size:1.7rem;} }
